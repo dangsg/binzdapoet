@@ -1,0 +1,21 @@
+textarea {
+    resize: none;
+}
+
+#default-avatar {
+    width: 60%;
+}
+
+#upload-avatar {
+    margin: auto;
+    margin-top: 32px;
+}
+
+#choose-picture {
+    padding-right: 80px;
+}
+
+#regSubmit {
+    margin: auto;
+    width: 74%;
+}
