@@ -15,7 +15,33 @@ textarea {
     padding-right: 80px;
 }
 
-#regSubmit {
-    margin: auto;
-    width: 74%;
+footer {
+    bottom: 0;
 }
+
+h1 {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    #regSubmit {
+        margin: auto;
+        width: 100%;
+    }
+ }
+
+
+
+
+
+@media (min-width: 768px) { 
+    #regSubmit {
+        margin: auto;
+        width: 74%;
+    }
+
+    #carouselExampleIndicators {
+        margin: auto;
+        width: 90%;
+    }
+ }
