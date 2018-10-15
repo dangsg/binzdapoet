@@ -19,8 +19,20 @@ footer {
     bottom: 0;
 }
 
-h1 {
+.h2home {
     text-align: center;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+#about-avatar {
+    width: 35%;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
 }
 
 @media (min-width: 576px) {
@@ -43,5 +55,8 @@ h1 {
     #carouselExampleIndicators {
         margin: auto;
         width: 90%;
+    }
+    .card-img-top {
+        height: 35%;
     }
  }
