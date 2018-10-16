@@ -60,7 +60,7 @@ footer {
         width: 100%;
     }
     #default-avatar {
-        width: 100%;
+        max-width: 100%;
     }
     .home-track:hover, .artist-thumb:hover {
         transform: scale(1.1);
