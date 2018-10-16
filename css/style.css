@@ -44,15 +44,6 @@ footer {
     word-wrap: break-word;    
 }
 
-.home-track:hover, .artist-thumb:hover {
-    transform: scale(1.15);
-    z-index: 1;
-}
-
-.home-track, .artist-thumb {
-    transition: 1s;
-}
-
 .my-card-anchor, .artist-anchor {
     color: black;
 }
@@ -62,6 +53,7 @@ footer {
     text-decoration: none;
 }
 
+
 @media (min-width: 576px) {
     #regSubmit {
         margin: auto;
@@ -69,6 +61,14 @@ footer {
     }
     #default-avatar {
         width: 100%;
+    }
+    .home-track:hover, .artist-thumb:hover {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    
+    .home-track, .artist-thumb {
+        transition: 1s;
     }
  }
 
@@ -92,4 +92,14 @@ footer {
         width: 60%;
         margin: auto;
     }
+    .home-track:hover, .artist-thumb:hover {
+        transform: scale(1.15);
+        z-index: 1;
+    }
+    
+    .home-track, .artist-thumb {
+        transition: 1s;
+    }
+    
+    
  }
