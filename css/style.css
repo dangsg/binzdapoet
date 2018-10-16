@@ -53,15 +53,16 @@ footer {
     text-decoration: none;
 }
 
+#default-avatar {
+    max-width: 100%;
+}
 
 @media (min-width: 576px) {
     #regSubmit {
         margin: auto;
         width: 100%;
     }
-    #default-avatar {
-        max-width: 100%;
-    }
+    
     .home-track:hover, .artist-thumb:hover {
         transform: scale(1.1);
         z-index: 1;
