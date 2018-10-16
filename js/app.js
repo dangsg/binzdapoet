@@ -7,11 +7,12 @@ $(document).ready(function () {
         $.each(data.artists,function(i,art){
             $('#artist-list').append(
                 '<div class="col-sm-4 col-md-3 artist-thumb">' +
+                '<a href="../html/artist-detail.html" class="artist-anchor">' +
                 '<div class="card">' +
                     '<img class="card-img-top" src="' + art.img + '" alt="Card image cap">' + 
                     '<div class="card-body">' +
                         '<h5 class="card-title text-center">' + art.name[0] + '</h5>' +
-                    '</div></div></div>'
+                    '</div></div></a></div>'
                 );
         });
 

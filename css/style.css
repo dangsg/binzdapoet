@@ -44,20 +44,20 @@ footer {
     word-wrap: break-word;    
 }
 
-.home-track:hover {
+.home-track:hover, .artist-thumb:hover {
     transform: scale(1.15);
     z-index: 1;
 }
 
-.home-track {
+.home-track, .artist-thumb {
     transition: 1s;
 }
 
-.my-card-anchor {
+.my-card-anchor, .artist-anchor {
     color: black;
 }
 
-.my-card-anchor:hover {
+.my-card-anchor:hover, .artist-anchor:hover {
     color: black;
     text-decoration: none;
 }
