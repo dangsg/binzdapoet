@@ -17,7 +17,7 @@ $(document).ready(function () {
         });
 
         let art = data.artists[0];
-        $('#artist-title').append(art.name[0]);
+        $('#artist-title').html(art.name[0]);
         $('#art-img').attr("src",art.img);
         $('#art-name').html(art.name[1]);
         $('#art-dob').html(art.dob);
