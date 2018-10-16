@@ -21,7 +21,7 @@
                         <h1 class="card-title text-center">Mấy con mèo</h1>
                         <h3 class="card-subtitle mb-2 text-muted text-center">Đạt Maniac</h3>
                         <br>
-                        <pre class="card-text"></pre>
+                        <p class="card-text poem-pre" id="poem-content"></p>
                         <p class="card-text"><small class="text-muted">Last updated 12 hours ago</small></p>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Comment..." aria-label="comment">
@@ -48,7 +48,7 @@
     <script src="../js/app.js"></script>
     <script>
         $(document).ready(function () {
-            $("pre").load("../lyric/may-con-meo.txt");
+            $("#poem-content").load("../lyric/may-con-meo.txt");
         });
     </script>
 </body>

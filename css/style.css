@@ -2,9 +2,6 @@ textarea {
     resize: none;
 }
 
-#default-avatar {
-    width: 60%;
-}
 
 #upload-avatar {
     margin: auto;
@@ -35,16 +32,45 @@ footer {
     margin: auto;
 }
 
+.artist-thumb {
+    margin-bottom: 15px !important;
+}
+
+.art-profile, .poem-pre {
+    white-space: pre-wrap;       
+    white-space: -moz-pre-wrap; 
+    white-space: -pre-wrap;    
+    white-space: -o-pre-wrap;   
+    word-wrap: break-word;    
+}
+
+.home-track:hover {
+    transform: scale(1.15);
+    z-index: 1;
+}
+
+.home-track {
+    transition: 1s;
+}
+
+.my-card-anchor {
+    color: black;
+}
+
+.my-card-anchor:hover {
+    color: black;
+    text-decoration: none;
+}
+
 @media (min-width: 576px) {
     #regSubmit {
         margin: auto;
         width: 100%;
     }
+    #default-avatar {
+        width: 100%;
+    }
  }
-
-
-
-
 
 @media (min-width: 768px) { 
     #regSubmit {
@@ -58,5 +84,12 @@ footer {
     }
     .card-img-top {
         height: 35%;
+    }
+    #default-avatar {
+        width: 60%;
+    }
+    #login-form {
+        width: 60%;
+        margin: auto;
     }
  }

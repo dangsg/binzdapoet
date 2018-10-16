@@ -2,24 +2,30 @@ $(document).ready(function () {
     
     $("header").load("../shared/header.html");
     $("footer").load("../shared/footer.html");
+   
+    $.getJSON('../json/artist.json',function(data){
+        $.each(data.artists,function(i,art){
+            $('#artist-list').append(
+                '<div class="col-sm-4 col-md-3 artist-thumb">' +
+                '<div class="card">' +
+                    '<img class="card-img-top" src="' + art.img + '" alt="Card image cap">' + 
+                    '<div class="card-body">' +
+                        '<h5 class="card-title text-center">' + art.name[0] + '</h5>' +
+                    '</div></div></div>'
+                );
+        });
+
+        let art = data.artists[0];
+        $('#artist-title').append(art.name[0]);
+        $('#art-img').attr("src",art.img);
+        $('#art-name').html(art.name[1]);
+        $('#art-dob').html(art.dob);
+        $('#art-desc').load(art.desc);
+    }).error(function(){
+        alert('error');
+    });
+
+
 });
-// $(function () {
-//     alert("json");
-//     $.getJSON('../json/artist.json',function(data){
-//         alert('success');
-//         $.each(data.artists,function(i,art){
-//             $('#artist-list').append(
-//                 '<div class="card">' +
-//                     '<img class="card-img-top" src="' + art.img + '" alt="Card image cap">' + 
-//                     '<div class="card-body">' +
-//                         '<h5 class="card-title">' + art.name + '</h5>' +
-//                         '<p class="card-text">' + art.desc + '</p>' +
-//                         '<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>' +
-//                     '</div></div>'
-//                 );
-//         });
-//     }).error(function(){
-//         alert('error');
-//     });
-// });
+
 
