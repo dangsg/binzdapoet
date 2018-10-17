@@ -10,10 +10,34 @@ textarea {
 
 #choose-picture {
     padding-right: 80px;
+    overflow: hidden;
 }
 
-footer {
+header {
+    margin-top: 15px;
+}
+
+
+footer { 
     bottom: 0;
+    width: 100%;
+}
+footer>div {
+    background-color: antiquewhite;
+}
+
+footer>hr {
+    margin-bottom: 0;
+}
+
+/* footer>p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+
+#text-footer {
+    margin-bottom: 0px;
 }
 
 .h2home {
@@ -55,6 +79,10 @@ footer {
 
 #default-avatar {
     max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Niramit', sans-serif;
 }
 
 @media (min-width: 576px) {
